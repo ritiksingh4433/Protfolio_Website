@@ -48,6 +48,8 @@ import lpuLogo from './assets/education_logo/lpu_logo.png';
 // Project Section Logo's
 import smartcityLogo from './assets/work_logo/smart_city.png';
 import sudokuLogo from './assets/work_logo/sudoku.png';
+import aiToolLogo from './assets/work_logo/Ai_app.png';
+
 
 
 export const SkillsInfo = [
@@ -172,16 +174,16 @@ export const SkillsInfo = [
   ];
   
   export const projects = [
-    // {
-    //   id: 0,
-    //   title: "GitHub Profile Detective",
-    //   description:
-    //     "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-    //   image: githubdetLogo,
-    //   tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-    //   github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-    //   webapp: "https://githubprofiledetective.netlify.app/",
-    // },
+    {
+      id: 0,
+      title: "React Ai Tool",
+      description:
+        "An interactive AI-powered query assistant using React that allows users to ask any question and instantly receive accurate, context-aware answers. The tool features a clean, modern UI with both light and dark modes, real-time response rendering, and a smooth chat-style interface for seamless interactions.Leveraging an AI API on the backend, it can handle a wide range of queries—from general knowledge to technical questions—making it a versatile assistant for everyday use. This project showcases my skills in React, API integration, state management, UI/UX design, and building responsive, user-friendly web applications.",
+        image: aiToolLogo,
+      tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
+      github: "https://github.com/ritiksingh4433/React_AI_Tool",
+      webapp: "https://react-ai-tool-azure.vercel.app/",
+    },
     {
       id: 1,
       title: "Smart City",
@@ -190,7 +192,7 @@ export const SkillsInfo = [
       image: smartcityLogo,
       tags: ["HTML", "CSS", "JavaScript"],
       github: " https://github.com/ritiksingh4433/SmartCity-Hackathon",
-      webapp: "https://ritiksingh4433.github.io/SmartCity-Hackathon/",
+      webapp: "https://smart-city-hackathon-mu.vercel.app/",
     },
     {
       id: 2,

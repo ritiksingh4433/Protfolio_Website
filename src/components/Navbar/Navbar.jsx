@@ -41,6 +41,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
+    { id: "certificates", label: "Certificates" },
     { id: "education", label: "Education" },
   ];
 
@@ -171,7 +172,7 @@ const Navbar = () => {
                 href="https://github.com/ritiksingh4433"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                  className="dark:text-gray-300 text-gray-600 hover:text-primary transition-colors"
               >
                 <FaGithub size={24} />
               </a>
@@ -179,7 +180,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/ritik-singh4433/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                  className="dark:text-gray-300 text-gray-600 hover:text-primary transition-colors"
               >
                 <FaLinkedin size={24} />
               </a>

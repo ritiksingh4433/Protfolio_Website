@@ -3,7 +3,7 @@ import './index.css'
 import App from './App.jsx'
 
 // Immediately set theme class before React mounts to avoid flash
-;(function initTheme() {
+(function initTheme() {
   try {
     const stored = localStorage.getItem('theme')
     if (stored === 'dark') {

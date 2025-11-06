@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 
+// import images (correct relative paths from this file)
+import javaImg from "../../assets/certificates/java.png";
+import dsaImg from "../../assets/certificates/dsa.png";
+import webImg from "../../assets/certificates/web_development.png";
+import genAIImg from "../../assets/certificates/Gen_AI.png";
+import cloudImg from "../../assets/certificates/cloud_computing.png";
+import backendImg from "../../assets/certificates/backend.png";
+
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
@@ -8,58 +16,68 @@ const Certificates = () => {
     {
       id: 1,
       title: "Java FullStack",
-      image: "/src/assets/certificates/java.png", // You'll need to add these images
-      description: "This certificate demonstrates my successful completion of the Java Full Stack Development program offered by Cipher Schools. Through this course, I gained hands-on experience in building full-stack web applications using technologies such as Java, Spring Boot, HTML, CSS, JavaScript, and databases. The program enhanced my understanding of both frontend and backend development, RESTful API integration, and deployment practices, strengthening my ability to create scalable and efficient web solutions.",
+      image: javaImg,               // use imported variable
       date: "July 2025",
       issuedBy: "Cipher Schools",
-      credentialLink: "https://drive.google.com/file/d/1RyMCxJwpXTANbfrDLSX1stC7KBMVcw6W/view?usp=drive_link"
+      credentialLink: "https://drive.google.com/file/d/1RyMCxJwpXTANbfrDLSX1stC7KBMVcw6W/view?usp=drive_link",
+      description:
+        "This certificate demonstrates my successful completion of the Java Full Stack Development program offered by Cipher Schools..."
     },
     {
       id: 2,
       title: "Data Structures and Algorithms - Self-Paced",
-      image: "/src/assets/certificates/dsa.png",
-      description: "Successfully completed a comprehensive 16-week Data Structures and Algorithms (Self-Paced) course offered by GeeksforGeeks, under the guidance of Mr. Sandeep Jain, Founder & CEO of GeeksforGeeks. The course provided an in-depth understanding of core computer science concepts including arrays, linked lists, stacks, queues, trees, graphs, searching and sorting algorithms, dynamic programming, and greedy techniques. It enhanced my problem-solving abilities, algorithmic thinking, and code optimization skills—strengthening my foundation for efficient software development and technical interviews.",
+      image: dsaImg,
       date: "August 2024",
       issuedBy: "GeeksforGeeks",
-      credentialLink: "https://drive.google.com/file/d/1o7ldjhC928wUSbJ3BzBLaZKcvT9qQzce/view?usp=drive_link"
+      credentialLink: "https://drive.google.com/file/d/1o7ldjhC928wUSbJ3BzBLaZKcvT9qQzce/view?usp=drive_link",
+      description:
+        "Successfully completed a comprehensive 16-week Data Structures and Algorithms course..."
     },
     {
       id: 3,
       title: "HTML, CSS, JavaScript for Web Developers",
-      image: "/src/assets/certificates/web_development.png",
-      description: "Successfully completed the HTML, CSS, and JavaScript for Web Developers course offered by Johns Hopkins University through Coursera, under the instruction of Yaakov Chaikin, Adjunct Professor in the Whiting School of Engineering. The course provided a comprehensive understanding of front-end web development, covering core web technologies such as HTML5 for content structuring, CSS3 for responsive and modern design, and JavaScript for interactive and dynamic functionality. It strengthened my ability to build responsive, user-friendly web interfaces and enhanced my overall front-end development proficiency.",
+      image: webImg,
       date: "March 2024",
       issuedBy: "Johns Hopkins University",
-      credentialLink: "https://drive.google.com/file/d/1igMkuFHIqrlXdc3MFG9MzxF5xdDAnfKz/view?usp=drive_link"
+      credentialLink: "https://drive.google.com/file/d/1igMkuFHIqrlXdc3MFG9MzxF5xdDAnfKz/view?usp=drive_link",
+      description:
+        "Successfully completed the HTML, CSS, and JavaScript for Web Developers course..."
     },
     {
       id: 4,
       title: "Generative AI for Everyone",
-      image: "/src/assets/certificates/Gen_AI.png",
-      description: "Successfully completed the Generative AI for Everyone course offered by DeepLearning.AI through Coursera, instructed by Andrew Ng, Founder of DeepLearning.AI and Co-founder of Coursera. The course provided a comprehensive understanding of generative AI concepts, including how large language models (LLMs) and diffusion models function, their real-world applications, and the ethical considerations surrounding AI deployment. It enhanced my knowledge of how generative AI tools can be leveraged to improve creativity, productivity, and problem-solving across various domains.",
+      image: genAIImg,
       date: "January 2024",
       issuedBy: "Coursera",
-      credentialLink: "https://drive.google.com/file/d/1obXClmz4No-taERT8dq50ll5-JR27K-6/view?usp=drive_link"
+      credentialLink: "https://drive.google.com/file/d/1obXClmz4No-taERT8dq50ll5-JR27K-6/view?usp=drive_link",
+      description:
+        "Successfully completed the Generative AI for Everyone course..."
     },
     {
       id: 5,
       title: "Cloud Computing",
-      image: "/src/assets/certificates/cloud_computing.png",
-      description: "Successfully completed the NPTEL Online Certification in Cloud Computing, offered by the Indian Institute of Technology Kharagpur and funded by the Ministry of Education, Government of India, during July–October 2024. This 12-week course, delivered through the SWAYAM platform, provided an in-depth understanding of cloud infrastructure, virtualization, service and deployment models (IaaS, PaaS, SaaS), and resource management in distributed systems. Achieved a consolidated score of 54%, with 23.94/25 in online assignments and 30/75 in the proctored exam, demonstrating a solid grasp of core cloud computing concepts and their practical applications.",
+      image: cloudImg,
       date: "June 2023",
       issuedBy: "IIT Kharagpur",
-      credentialLink: "https://drive.google.com/file/d/1MNZfb7ZhKKMMqHKRW1v2A3uj93g9KFH0/view?usp=drive_link"
+      credentialLink: "https://drive.google.com/file/d/1MNZfb7ZhKKMMqHKRW1v2A3uj93g9KFH0/view?usp=drive_link",
+      description:
+        "Successfully completed the NPTEL Online Certification in Cloud Computing..."
     },
     {
       id: 6,
       title: "Server side JavaScript with Node.js",
-      image: "/src/assets/certificates/backend.png",
-      description: "I completed the Server Side JavaScript with Node.js course, offered by NIIT in collaboration with Coursera. This certification strengthened my understanding of backend development using Node.js, including core concepts such as server-side scripting, asynchronous programming, module handling, API creation, and integrating Node.js applications with modern web technologies.It helped me build a strong foundation in backend logic, efficient request handling, and developing scalable server-side applications.",
+      image: backendImg,
       date: "March 2024",
       issuedBy: "Coursera",
-      credentialLink: "https://drive.google.com/file/d/1KP3Vz6CUmxWbcpO_JtwTiMOOduokKXII/view?usp=drive_link"
+      credentialLink: "https://drive.google.com/file/d/1KP3Vz6CUmxWbcpO_JtwTiMOOduokKXII/view?usp=drive_link",
+      description:
+        "I completed the Server Side JavaScript with Node.js course..."
     }
   ];
+
+  // ...the rest of your component stays the same
+  // (no /src/ prefixes anywhere)
+
 
   return (
     <section id="certificates" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans">
